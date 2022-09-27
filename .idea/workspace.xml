@@ -5,20 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2156b0c-3e0e-4b00-b0af-bb331cb30b5a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/users/exceptions/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/exceptions/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/managers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/services/registration.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/services/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/development-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/development-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/b/5b04e0277071f445905a365cec3760c4d6f3be20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/one_day_intern/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/one_day_intern/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/one_day_intern/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/one_day_intern/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/services/registration.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/services/registration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/services/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/services/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +59,50 @@
       <recent name="C:\Users\ASUS\Documents\Projects\one-day-intern-backend\users\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.runserver">
-    <configuration name="Test: users.tests" type="DjangoTestsConfigurationType" temporary="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="Test: users.tests.CompanyRegistrationTest" type="DjangoTestsConfigurationType">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DATABASE_URL" value="postgres://postgres:postgres@localhost:5432/odi_development" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.CompanyRegistrationTest" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.RegistrationTest" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DATABASE_URL" value="postgres://postgres:postgres@localhost:5432/odi_development" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.RegistrationTest" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.RegistrationTest.test_validate_user_registration_data_when_request_is_valid" type="DjangoTestsConfigurationType">
       <module name="one-day-intern-backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -78,7 +115,150 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="users.tests" />
+      <option name="TARGET" value="users.tests.RegistrationTest.test_validate_user_registration_data_when_request_is_valid" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.RegistrationTest.test_validate_user_registration_when_email_is_missing" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.RegistrationTest.test_validate_user_registration_when_email_is_missing" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_email_not_present" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.UserRegistrationTest.test_validate_user_registration_data_when_email_not_present" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_given_valid_data" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.UserRegistrationTest.test_validate_user_registration_data_when_given_valid_data" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.UtilsTest" type="DjangoTestsConfigurationType">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DATABASE_URL" value="postgres://postgres:postgres@localhost:5432/odi_development" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.UtilsTest" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.UtilsTest.test_sample_test" type="DjangoTestsConfigurationType">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DATABASE_URL" value="postgres://postgres:postgres@localhost:5432/odi_development" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.UtilsTest.test_sample_test" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.UtilsTest.test_validate_password_when_valid" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.UtilsTest.test_validate_password_when_valid" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: users.tests.ViewsTestCase" type="DjangoTestsConfigurationType">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DATABASE_URL" value="postgres://postgres:postgres@localhost:5432/odi_development" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="users.tests.ViewsTestCase" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
@@ -210,7 +390,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DATABASE_URL" value="postgres://postgres:postgres@localhost:5432/odi_development" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\ASUS\.virtualenvs\one-day-intern-backend-QwMKWQZM\Scripts\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\ASUS\.virtualenvs\one-day-intern-backend-9vorjoR8\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -250,7 +430,16 @@
     </configuration>
     <list>
       <item itemvalue="Django Server.one-day-intern-backend" />
-      <item itemvalue="Django tests.Test: users.tests" />
+      <item itemvalue="Django tests.Test: users.tests.CompanyRegistrationTest" />
+      <item itemvalue="Django tests.Test: users.tests.RegistrationTest.test_validate_user_registration_data_when_request_is_valid" />
+      <item itemvalue="Django tests.Test: users.tests.UtilsTest" />
+      <item itemvalue="Django tests.Test: users.tests.UtilsTest.test_sample_test" />
+      <item itemvalue="Django tests.Test: users.tests.ViewsTestCase" />
+      <item itemvalue="Django tests.Test: users.tests.RegistrationTest" />
+      <item itemvalue="Django tests.Test: users.tests.RegistrationTest.test_validate_user_registration_when_email_is_missing" />
+      <item itemvalue="Django tests.Test: users.tests.UtilsTest.test_validate_password_when_valid" />
+      <item itemvalue="Django tests.Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_email_not_present" />
+      <item itemvalue="Django tests.Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_given_valid_data" />
       <item itemvalue="Python.migrate" />
       <item itemvalue="Python.makemigrations" />
       <item itemvalue="Python.runserver" />
@@ -260,7 +449,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Django tests.Test: users.tests" />
+        <item itemvalue="Django tests.Test: users.tests.RegistrationTest" />
+        <item itemvalue="Django tests.Test: users.tests.RegistrationTest.test_validate_user_registration_when_email_is_missing" />
+        <item itemvalue="Django tests.Test: users.tests.UtilsTest.test_validate_password_when_valid" />
+        <item itemvalue="Django tests.Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_email_not_present" />
+        <item itemvalue="Django tests.Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_given_valid_data" />
       </list>
     </recent_temporary>
   </component>
@@ -278,6 +471,13 @@
       <workItem from="1663738965814" duration="347000" />
       <workItem from="1663777055350" duration="6306000" />
       <workItem from="1663813888920" duration="12943000" />
+      <workItem from="1663921556662" duration="122000" />
+      <workItem from="1664084251199" duration="95000" />
+      <workItem from="1664105583734" duration="4518000" />
+      <workItem from="1664110591809" duration="331000" />
+      <workItem from="1664198332266" duration="895000" />
+      <workItem from="1664199250332" duration="26335000" />
+      <workItem from="1664268842389" duration="1090000" />
     </task>
     <servers />
   </component>
@@ -296,11 +496,21 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_CompanyRegistrationTest.coverage" NAME="Test: users.tests.CompanyRegistrationTest Coverage Results" MODIFIED="1664220125446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_RegistrationTest_test_validate_user_registration_when_email_is_missing.coverage" NAME="Test: users.tests.RegistrationTest.test_validate_user_registration_when_email_is_missing Coverage Results" MODIFIED="1664214194125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_RegistrationTest_test_validate_user_registration_data_when_request_is_valid.coverage" NAME="Test: users.tests.RegistrationTest.test_validate_user_registration_data_when_request_is_valid Coverage Results" MODIFIED="1664213090553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UtilsTest_test_validate_password_when_valid.coverage" NAME="Test: users.tests.UtilsTest.test_validate_password_when_valid Coverage Results" MODIFIED="1664203093650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$createsuperuser.coverage" NAME="createsuperuser Coverage Results" MODIFIED="1663676103337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$manage.coverage" NAME="manage Coverage Results" MODIFIED="1663816313382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$makemigrations.coverage" NAME="makemigrations Coverage Results" MODIFIED="1663817205036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UtilsTest_test_sample_test.coverage" NAME="Test: users.tests.UtilsTest.test_sample_test Coverage Results" MODIFIED="1664203556800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$migrate.coverage" NAME="migrate Coverage Results" MODIFIED="1663817212962" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$runserver.coverage" NAME="runserver Coverage Results" MODIFIED="1663817983892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/one_day_intern_backend$test.coverage" NAME="test Coverage Results" MODIFIED="1663779176721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_ViewsTestCase.coverage" NAME="Test: users.tests.ViewsTestCase Coverage Results" MODIFIED="1664252056204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UtilsTest.coverage" NAME="Test: users.tests.UtilsTest Coverage Results" MODIFIED="1664210161866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UserRegistrationTest_test_validate_user_registration_data_when_given_valid_data.coverage" NAME="Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_given_valid_data Coverage Results" MODIFIED="1664107393254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UserRegistrationTest_test_validate_user_registration_data_when_email_not_present.coverage" NAME="Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_email_not_present Coverage Results" MODIFIED="1664108238139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_RegistrationTest.coverage" NAME="Test: users.tests.RegistrationTest Coverage Results" MODIFIED="1664217781290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$test.coverage" NAME="test Coverage Results" MODIFIED="1664253339811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
