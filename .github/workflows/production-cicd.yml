@@ -19,9 +19,11 @@ jobs:
       - name: Collect Static Files
         run: python manage.py collectstatic --no-input
       - name: Run Test
-        run: python manage.py test
+        run: coverage run manage.py test
         env:
           DATABASE_URL: ${{ secrets.PRODUCTION_DATABASE_URL }}
+      - name: Display Coverage Result
+        run: coverage report
 
   sonarcloud:
     name: SonarCloud
