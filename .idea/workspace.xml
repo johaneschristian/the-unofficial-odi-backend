@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2156b0c-3e0e-4b00-b0af-bb331cb30b5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/development-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/development-ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/production-cicd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/production-cicd.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sonar-project.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -470,7 +469,7 @@
       <workItem from="1664110591809" duration="331000" />
       <workItem from="1664198332266" duration="895000" />
       <workItem from="1664199250332" duration="26335000" />
-      <workItem from="1664268842389" duration="1724000" />
+      <workItem from="1664268842389" duration="1906000" />
     </task>
     <servers />
   </component>
