@@ -23,5 +23,3 @@ A
 users/views.py,5\f\5fc54a09665485d90807a8e72925d27743a0db75
 ;
 runtime.txt,2\e\2ed4029984f4a6c70a541992efb31f76528bd80d
-@
-requirements.txt,1\9\19359a61ae2446b51b549167b014da2fcf265768
