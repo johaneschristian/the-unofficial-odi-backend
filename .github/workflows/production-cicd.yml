@@ -24,6 +24,11 @@ jobs:
           DATABASE_URL: ${{ secrets.PRODUCTION_DATABASE_URL }}
       - name: Display Coverage Result
         run: coverage report
+      - name: Upload coverage data
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-coverage
+          path: .coverage*
 
   sonarcloud:
     name: SonarCloud
@@ -33,10 +38,16 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: Coverage
-        run: coverage run manage.py test
+      - name: Download coverage data
+        uses: actions/download-artifact@v2
+        with:
+          name: test-coverage
+      - name: Install Coverage
+        run: pip install coverage
       - name: Report coverage
-        run: coverage report
+        run: coverage report -m
+      - name: Create coverage.xml file
+        run: coverage xml
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:

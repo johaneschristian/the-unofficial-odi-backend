@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2156b0c-3e0e-4b00-b0af-bb331cb30b5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/production-cicd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/production-cicd.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,7 @@
       <recent name="C:\Users\ASUS\Documents\Projects\one-day-intern-backend\users\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.coverage">
+  <component name="RunManager" selected="Python.test">
     <configuration name="Test: users.tests.CompanyRegistrationTest" type="DjangoTestsConfigurationType">
       <module name="one-day-intern-backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -495,7 +495,7 @@
       <workItem from="1664110591809" duration="331000" />
       <workItem from="1664198332266" duration="895000" />
       <workItem from="1664199250332" duration="26335000" />
-      <workItem from="1664268842389" duration="3455000" />
+      <workItem from="1664268842389" duration="4439000" />
     </task>
     <servers />
   </component>
@@ -516,6 +516,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_CompanyRegistrationTest.coverage" NAME="Test: users.tests.CompanyRegistrationTest Coverage Results" MODIFIED="1664220125446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_RegistrationTest_test_validate_user_registration_when_email_is_missing.coverage" NAME="Test: users.tests.RegistrationTest.test_validate_user_registration_when_email_is_missing Coverage Results" MODIFIED="1664214194125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$coverage.coverage" NAME="coverage Coverage Results" MODIFIED="1664275184614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_RegistrationTest_test_validate_user_registration_data_when_request_is_valid.coverage" NAME="Test: users.tests.RegistrationTest.test_validate_user_registration_data_when_request_is_valid Coverage Results" MODIFIED="1664213090553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UtilsTest_test_validate_password_when_valid.coverage" NAME="Test: users.tests.UtilsTest.test_validate_password_when_valid Coverage Results" MODIFIED="1664203093650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$createsuperuser.coverage" NAME="createsuperuser Coverage Results" MODIFIED="1663676103337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -529,6 +530,6 @@
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UserRegistrationTest_test_validate_user_registration_data_when_given_valid_data.coverage" NAME="Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_given_valid_data Coverage Results" MODIFIED="1664107393254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UserRegistrationTest_test_validate_user_registration_data_when_email_not_present.coverage" NAME="Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_email_not_present Coverage Results" MODIFIED="1664108238139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_RegistrationTest.coverage" NAME="Test: users.tests.RegistrationTest Coverage Results" MODIFIED="1664217781290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/one_day_intern_backend$test.coverage" NAME="test Coverage Results" MODIFIED="1664275072735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$test.coverage" NAME="test Coverage Results" MODIFIED="1664275378829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
