@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e2156b0c-3e0e-4b00-b0af-bb331cb30b5a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/development-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/development-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -469,7 +471,7 @@
       <workItem from="1664110591809" duration="331000" />
       <workItem from="1664198332266" duration="895000" />
       <workItem from="1664199250332" duration="26335000" />
-      <workItem from="1664268842389" duration="1231000" />
+      <workItem from="1664268842389" duration="1403000" />
     </task>
     <servers />
   </component>
