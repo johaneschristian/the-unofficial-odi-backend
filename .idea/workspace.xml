@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2156b0c-3e0e-4b00-b0af-bb331cb30b5a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/production-cicd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/production-cicd.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <recent name="C:\Users\ASUS\Documents\Projects\one-day-intern-backend\users\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.coverage">
     <configuration name="Test: users.tests.CompanyRegistrationTest" type="DjangoTestsConfigurationType">
       <module name="one-day-intern-backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,6 +259,29 @@
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="coverage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="one-day-intern-backend" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DATABASE_URL" value="postgres://postgres:postgres@localhost:5432/odi_development" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ASUS\.virtualenvs\one-day-intern-backend-9vorjoR8\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="coverage" />
+      <option name="PARAMETERS" value="run manage.py test" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="createsuperuser" type="PythonConfigurationType" factoryName="Python">
       <module name="one-day-intern-backend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -380,8 +404,8 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DATABASE_URL" value="postgres://postgres:postgres@localhost:5432/odi_development" />
+        <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Users\ASUS\.virtualenvs\one-day-intern-backend-9vorjoR8\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -439,6 +463,7 @@
       <item itemvalue="Python.createsuperuser" />
       <item itemvalue="Python.manage" />
       <item itemvalue="Python.test" />
+      <item itemvalue="Python.coverage" />
     </list>
     <recent_temporary>
       <list>
@@ -470,7 +495,7 @@
       <workItem from="1664110591809" duration="331000" />
       <workItem from="1664198332266" duration="895000" />
       <workItem from="1664199250332" duration="26335000" />
-      <workItem from="1664268842389" duration="3024000" />
+      <workItem from="1664268842389" duration="3455000" />
     </task>
     <servers />
   </component>
@@ -504,6 +529,6 @@
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UserRegistrationTest_test_validate_user_registration_data_when_given_valid_data.coverage" NAME="Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_given_valid_data Coverage Results" MODIFIED="1664107393254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_UserRegistrationTest_test_validate_user_registration_data_when_email_not_present.coverage" NAME="Test: users.tests.UserRegistrationTest.test_validate_user_registration_data_when_email_not_present Coverage Results" MODIFIED="1664108238139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/one_day_intern_backend$Test__users_tests_RegistrationTest.coverage" NAME="Test: users.tests.RegistrationTest Coverage Results" MODIFIED="1664217781290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/one_day_intern_backend$test.coverage" NAME="test Coverage Results" MODIFIED="1664253339811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/one_day_intern_backend$test.coverage" NAME="test Coverage Results" MODIFIED="1664275072735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
