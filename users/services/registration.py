@@ -1,6 +1,7 @@
 from ..exceptions.exceptions import InvalidRegistrationException, EmailNotFoundException
 from users.models import Company, Assessor, Assessee, CompanyOneTimeLinkCode
-from .utils import validate_date_format, validate_phone_number, get_date_from_string
+from .utils import validate_date_format, validate_phone_number, get_date_from_string, validate_email, validate_password
+from . import utils
 import uuid
 
 
@@ -15,21 +16,31 @@ def generate_one_time_code(company_email):
 
 
 def validate_user_registration_data(request_data):
-    if not request_data.get('email'):
+    email = request_data.get('email')
+    password = request_data.get('password')
+
+    if not email:
         raise InvalidRegistrationException('Email must not be null')
-    if not request_data.get('password'):
+    if not utils.validate_email(email):
+        raise InvalidRegistrationException('Email is invalid')
+    if not password:
         raise InvalidRegistrationException('Password must not be null')
-    if request_data.get('password') != request_data.get('confirmed_password'):
+
+    validate_password_result = utils.validate_password(password)
+
+    if not (validate_password_result['is_valid']):
+        raise InvalidRegistrationException(validate_password_result['message'])
+    if password != request_data.get('confirmed_password'):
         raise InvalidRegistrationException('Password must match password confirmation')
 
 
 def validate_user_company_registration_data(request_data):
-    if not request_data.get('company_name'):
-        raise InvalidRegistrationException('Company name must not be null')
-    if not request_data.get('company_description'):
-        raise InvalidRegistrationException('Company description must not be null')
-    if not request_data.get('company_address'):
-        raise InvalidRegistrationException('Company address must not be null')
+    if not (company_name := request_data.get('company_name')) or len(company_name) < 3:
+        raise InvalidRegistrationException('Company name must be more than 3 characters')
+    if not (company_description := request_data.get('company_description')) or len(company_description) < 3:
+        raise InvalidRegistrationException('Company description must be more than 3 characters')
+    if not (company_address := request_data.get('company_address')) or len(company_address) < 3:
+        raise InvalidRegistrationException('Company address must be more than 3 characters')
 
 
 def validate_user_assessor_registration_data(request_data):
@@ -151,3 +162,7 @@ def register_assessee(request_data):
     assessee = save_assessee_from_request_data(request_data)
     return assessee
 
+
+def caller():
+    print('Hello World')
+    return utils.validate_password('Hello World')
