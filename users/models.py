@@ -60,8 +60,10 @@ class Assessee(OdiUser):
     date_of_birth = models.DateField()
 
 
-class AssesseeSerializer:
-    pass
+class AssesseeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Assessee
+        fields = ['email', 'first_name', 'last_name', 'phone_number', 'date_of_birth']
 
 
 class CompanyOneTimeLinkCode(models.Model):

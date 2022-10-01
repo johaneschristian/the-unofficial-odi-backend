@@ -1,8 +1,8 @@
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
-from .services.registration import register_company, register_assessor, generate_one_time_code
-from .models import CompanySerializer, AssessorSerializer, CompanyOneTimeLinkCodeSerializer
+from .services.registration import register_company, register_assessor, generate_one_time_code, register_assessee
+from .models import CompanySerializer, AssessorSerializer, CompanyOneTimeLinkCodeSerializer, AssesseeSerializer
 import json
 
 
@@ -63,3 +63,7 @@ def serve_register_assessee(request):
         phone_number,
         date_of_birth,
     """
+    request_data = json.loads(request.body.decode('utf-8'))
+    assessee = register_assessee(request_data)
+    response_data = AssesseeSerializer(assessee).data
+    return Response(data=response_data)

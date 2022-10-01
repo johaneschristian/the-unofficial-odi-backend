@@ -2,7 +2,7 @@ from django.urls import path
 from .views import (
     serve_register_company,
     serve_register_assessor,
-    generate_assessor_one_time_code
+    generate_assessor_one_time_code, serve_register_assessee
 )
 from rest_framework_simplejwt.views import (
     TokenObtainPairView,
@@ -15,5 +15,6 @@ urlpatterns = [
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('register-company/', serve_register_company),
     path('register-assessor/', serve_register_assessor),
+    path('register-assessee/', serve_register_assessee),
     path('generate-code/', generate_assessor_one_time_code),
 ]
